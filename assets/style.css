@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+.containerHeader{
+    text-align: center;
+}
+
+/* titre quizz */
+
+.containerTitle{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #17202A;
+}
+
+.containerTitle h3{
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+/* container quizz */
+
+
+.questionBloc{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 5px rgb(196, 196, 196);
+    padding: 20px 50px;
+    margin: 10px;
+    height: auto;
+    background-color: white;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.questionBloc p{
+    font-size: 18px;
+}
+
+.bgTlou{
+    background: url('../assets/img/tlou.png');
+    background-size: 160px;
+}
+.bgTlou2{
+    background: url('../assets/img/tlou2.png');
+    background-size: 220px;
+}
+
+/* Bouton */
+
+.containerBtn{
+    margin: 50px 0 100px 0;
+    text-align: center;
+}
+
+.containerBtn button{
+    margin: auto 50px;
+}
+
+.containerBtn .btnValid:hover{
+    color: white;
+    background-color: #27AE60;
+}
+.containerBtn .btnView:hover{
+    color: white;
+    background-color: #E74C3C;
+}
+/* resultats */
+
+.resultats{
+    text-align: center;
+    line-height: 5;
+}
+
+.resultats h2{
+    font-family: 'Anton';
+}
+
+/* animation echec */
+.echec{
+    animation: echec 0.3s ease-in-out;
+}
+
+@keyframes echec{
+    0%{transform: translateX(0px);}
+    33%{transform: translateX(10px);}
+    66%{transform: translateX(-10px);}
+    100%{transform: translateX(0px);}
+}
+
+/* footer */
+
+footer{
+        margin-top: 100px;
+        text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 1024px){
+    .containerHeader img{
+        width: 850px;
+    }
+}
+
+@media (max-width: 992px) {
+    .containerHeader img{
+        width: 600px;
+    }
+    .bgTlou{
+        background: url('tlou.png');
+        background-size: 100px;
+    }
+    .bgTlou2{
+        background: url('tlou2.png');
+        background-size: 170px;
+    }
+}
+@media (max-width: 768px) {
+    .containerHeader p{
+        margin: 0 30px;
+    }
+    .bgTlou{
+        background: url('tlou.png');
+        background-size: 90px;
+    }
+    .bgTlou2{
+        background: url('tlou2.png');
+        background-size: 165px;
+    }
+}
+@media (max-width: 576px){
+    .containerHeader img{
+        width: 400px;
+    }e
+    .containerHeader p{
+        margin: 0 50px;
+    }
+    .containerTitle h3{
+        font-size: 25px;
+    }
+    .bgTlou, .bgTlou2{
+        background: none;
+    }
+    .questionBloc p{
+        font-size: 15px;
+    }
+    .questionBloc div{
+        display: flex;
+    }
+    .questionBloc input{
+        margin: 3px 10px 0 0;
+    }
+    .questionBloc label{
+        font-size: 13px;
+    }
+    .containerBtn{
+        line-height: 4;
+    }
+    .resultats h2{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:0px) and (max-width:375px) {
+    .containerHeader p{
+        display: none;
+    }
+    .containerHeader img{
+        width: 320px;
+    }
+}
