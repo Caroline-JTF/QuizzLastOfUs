@@ -137,15 +137,10 @@ function afficherResultats(tabCheck){
             addGif.src = tabGif[0];
             break;
     }
+
+    addGif.style.width ='500px';
+    addGif.style.height ='auto';
 }
-
-
-
-
-
-
-
-
 
 
 //Permet de mettre les bg en vert ou rouge selon si c'est une bonne ou mauvaise réponse
@@ -178,13 +173,6 @@ toutesLesQuestions.forEach(item => {
         item.style.background = "white";
     })
 })
-
-
-
-
-
-
-
 
 
 
