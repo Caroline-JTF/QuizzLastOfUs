@@ -102,11 +102,6 @@ footer{
         text-align: center;
 }
 
-footer a{
-    color: black;
-    text-decoration: none;
-}
-
 /* media queries */
 
 @media (max-width: 1024px){
