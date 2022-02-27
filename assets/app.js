@@ -231,7 +231,7 @@ function displayYear (){
 
     date = date.getFullYear();
 
-    return copyright.innerText = 'Copyright © ' + date + ' | QuizzTheLastOfUs';
+    return copyright.innerText = date;
 }
 
 displayYear();
